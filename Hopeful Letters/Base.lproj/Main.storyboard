@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,79 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hopeful_Letters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_120X120.png" translatesAutoresizingMaskIntoConstraints="NO" id="maO-vl-DZN">
+                                <rect key="frame" x="8" y="120" width="752" height="120"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YhH-3o-MU6">
+                                <rect key="frame" x="116" y="292" width="375" height="20"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92z-nX-VlE">
+                                <rect key="frame" x="0.0" y="278" width="768" height="25"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="법륜스님의">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name=".AppleSDGothicNeoI-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="희망편지">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jungto_ci_kor.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ixp-qQ-utQ">
+                                <rect key="frame" x="0.0" y="856" width="768" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="fQl-8u-YWm"/>
+                                    <constraint firstAttribute="height" constant="128" id="imH-jh-WVK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ixp-qQ-utQ" secondAttribute="bottom" constant="20" id="35H-re-rTV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ixp-qQ-utQ" secondAttribute="trailing" id="4FX-ZL-cKB"/>
+                            <constraint firstItem="92z-nX-VlE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5pk-0r-gFF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YhH-3o-MU6" secondAttribute="trailing" id="8p6-cP-Qp9"/>
+                            <constraint firstItem="YhH-3o-MU6" firstAttribute="top" secondItem="maO-vl-DZN" secondAttribute="bottom" constant="35" id="MBg-b1-4Dt"/>
+                            <constraint firstItem="92z-nX-VlE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OB3-gu-2AR"/>
+                            <constraint firstItem="92z-nX-VlE" firstAttribute="top" secondItem="maO-vl-DZN" secondAttribute="bottom" constant="38" id="Uql-fX-FTc"/>
+                            <constraint firstItem="YhH-3o-MU6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vft-F5-SK3"/>
+                            <constraint firstItem="maO-vl-DZN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="WMU-3b-geV"/>
+                            <constraint firstItem="maO-vl-DZN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="cGA-LD-DVe"/>
+                            <constraint firstItem="Ixp-qQ-utQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dk7-O1-oNU"/>
+                            <constraint firstItem="maO-vl-DZN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="gg0-RA-mon"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="maO-vl-DZN" secondAttribute="trailing" constant="8" id="lXO-3F-5kg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ixp-qQ-utQ" secondAttribute="bottom" constant="22" id="ra9-vW-DTe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ixp-qQ-utQ" secondAttribute="bottom" constant="40" id="yl7-ww-MOd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.512315270935964"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_120X120.png" width="120" height="120"/>
+        <image name="jungto_ci_kor.jpg" width="975" height="1035"/>
+    </resources>
 </document>
